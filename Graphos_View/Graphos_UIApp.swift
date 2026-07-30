@@ -2,7 +2,7 @@
 //  Graphos_UIApp.swift
 //  Graphos_UI
 //
-//  Created by Potatostore on 5/18/26.
+//  Created by Potatostore on 7/4/26.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct Graphos_UIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

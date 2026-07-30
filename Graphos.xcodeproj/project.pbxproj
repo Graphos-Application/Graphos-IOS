@@ -24,15 +24,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8FEA127F2FBB3C94009903F4 /* Graphos_UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphos_UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FEA128C2FBB3C95009903F4 /* Graphos_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Graphos_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FEA12962FBB3C95009903F4 /* Graphos_UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Graphos_UIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F485F5A3004A45D007B93BE /* Graphos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Graphos-Info.plist"; sourceTree = "<group>"; };
+		8FEA127F2FBB3C94009903F4 /* Graphos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graphos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEA128C2FBB3C95009903F4 /* GraphosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FEA12962FBB3C95009903F4 /* GraphosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		8FEA12812FBB3C94009903F4 /* Graphos_UI */ = {
+		8F08F0302FFE03D10046FE3E /* Graphos_Models */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Graphos_UI;
+			path = Graphos_Models;
+			sourceTree = "<group>";
+		};
+		8F08F0392FFE15130046FE3E /* Graphos_Service */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Graphos_Service;
+			sourceTree = "<group>";
+		};
+		8F08F04B2FFE16980046FE3E /* Manager */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8FEA12812FBB3C94009903F4 /* Graphos_View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Graphos_View;
 			sourceTree = "<group>";
 		};
 		8FEA128F2FBB3C95009903F4 /* Graphos_UITests */ = {
@@ -75,7 +91,11 @@
 		8FEA12762FBB3C94009903F4 = {
 			isa = PBXGroup;
 			children = (
-				8FEA12812FBB3C94009903F4 /* Graphos_UI */,
+				8F485F5A3004A45D007B93BE /* Graphos-Info.plist */,
+				8F08F04B2FFE16980046FE3E /* Manager */,
+				8F08F0392FFE15130046FE3E /* Graphos_Service */,
+				8F08F0302FFE03D10046FE3E /* Graphos_Models */,
+				8FEA12812FBB3C94009903F4 /* Graphos_View */,
 				8FEA128F2FBB3C95009903F4 /* Graphos_UITests */,
 				8FEA12992FBB3C95009903F4 /* Graphos_UIUITests */,
 				8FEA12802FBB3C94009903F4 /* Products */,
@@ -85,9 +105,9 @@
 		8FEA12802FBB3C94009903F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8FEA127F2FBB3C94009903F4 /* Graphos_UI.app */,
-				8FEA128C2FBB3C95009903F4 /* Graphos_UITests.xctest */,
-				8FEA12962FBB3C95009903F4 /* Graphos_UIUITests.xctest */,
+				8FEA127F2FBB3C94009903F4 /* Graphos.app */,
+				8FEA128C2FBB3C95009903F4 /* GraphosTests.xctest */,
+				8FEA12962FBB3C95009903F4 /* GraphosUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +115,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8FEA127E2FBB3C94009903F4 /* Graphos_UI */ = {
+		8FEA127E2FBB3C94009903F4 /* Graphos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FEA12A02FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos_UI" */;
+			buildConfigurationList = 8FEA12A02FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos" */;
 			buildPhases = (
 				8FEA127B2FBB3C94009903F4 /* Sources */,
 				8FEA127C2FBB3C94009903F4 /* Frameworks */,
@@ -108,18 +128,21 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				8FEA12812FBB3C94009903F4 /* Graphos_UI */,
+				8F08F0302FFE03D10046FE3E /* Graphos_Models */,
+				8F08F0392FFE15130046FE3E /* Graphos_Service */,
+				8F08F04B2FFE16980046FE3E /* Manager */,
+				8FEA12812FBB3C94009903F4 /* Graphos_View */,
 			);
-			name = Graphos_UI;
+			name = Graphos;
 			packageProductDependencies = (
 			);
 			productName = Graphos_UI;
-			productReference = 8FEA127F2FBB3C94009903F4 /* Graphos_UI.app */;
+			productReference = 8FEA127F2FBB3C94009903F4 /* Graphos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8FEA128B2FBB3C95009903F4 /* Graphos_UITests */ = {
+		8FEA128B2FBB3C95009903F4 /* GraphosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FEA12A32FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos_UITests" */;
+			buildConfigurationList = 8FEA12A32FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "GraphosTests" */;
 			buildPhases = (
 				8FEA12882FBB3C95009903F4 /* Sources */,
 				8FEA12892FBB3C95009903F4 /* Frameworks */,
@@ -133,16 +156,16 @@
 			fileSystemSynchronizedGroups = (
 				8FEA128F2FBB3C95009903F4 /* Graphos_UITests */,
 			);
-			name = Graphos_UITests;
+			name = GraphosTests;
 			packageProductDependencies = (
 			);
 			productName = Graphos_UITests;
-			productReference = 8FEA128C2FBB3C95009903F4 /* Graphos_UITests.xctest */;
+			productReference = 8FEA128C2FBB3C95009903F4 /* GraphosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8FEA12952FBB3C95009903F4 /* Graphos_UIUITests */ = {
+		8FEA12952FBB3C95009903F4 /* GraphosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FEA12A62FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos_UIUITests" */;
+			buildConfigurationList = 8FEA12A62FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "GraphosUITests" */;
 			buildPhases = (
 				8FEA12922FBB3C95009903F4 /* Sources */,
 				8FEA12932FBB3C95009903F4 /* Frameworks */,
@@ -156,11 +179,11 @@
 			fileSystemSynchronizedGroups = (
 				8FEA12992FBB3C95009903F4 /* Graphos_UIUITests */,
 			);
-			name = Graphos_UIUITests;
+			name = GraphosUITests;
 			packageProductDependencies = (
 			);
 			productName = Graphos_UIUITests;
-			productReference = 8FEA12962FBB3C95009903F4 /* Graphos_UIUITests.xctest */;
+			productReference = 8FEA12962FBB3C95009903F4 /* GraphosUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +209,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8FEA127A2FBB3C94009903F4 /* Build configuration list for PBXProject "Graphos_UI" */;
+			buildConfigurationList = 8FEA127A2FBB3C94009903F4 /* Build configuration list for PBXProject "Graphos" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8FEA127E2FBB3C94009903F4 /* Graphos_UI */,
-				8FEA128B2FBB3C95009903F4 /* Graphos_UITests */,
-				8FEA12952FBB3C95009903F4 /* Graphos_UIUITests */,
+				8FEA127E2FBB3C94009903F4 /* Graphos */,
+				8FEA128B2FBB3C95009903F4 /* GraphosTests */,
+				8FEA12952FBB3C95009903F4 /* GraphosUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +281,12 @@
 /* Begin PBXTargetDependency section */
 		8FEA128E2FBB3C95009903F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8FEA127E2FBB3C94009903F4 /* Graphos_UI */;
+			target = 8FEA127E2FBB3C94009903F4 /* Graphos */;
 			targetProxy = 8FEA128D2FBB3C95009903F4 /* PBXContainerItemProxy */;
 		};
 		8FEA12982FBB3C95009903F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8FEA127E2FBB3C94009903F4 /* Graphos_UI */;
+			target = 8FEA127E2FBB3C94009903F4 /* Graphos */;
 			targetProxy = 8FEA12972FBB3C95009903F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,6 +420,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Graphos-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +453,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Graphos-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범 접근";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,7 +494,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphos_UI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Graphos_UI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Graphos";
 			};
 			name = Debug;
 		};
@@ -488,7 +515,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphos_UI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Graphos_UI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Graphos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Graphos";
 			};
 			name = Release;
 		};
@@ -533,7 +560,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8FEA127A2FBB3C94009903F4 /* Build configuration list for PBXProject "Graphos_UI" */ = {
+		8FEA127A2FBB3C94009903F4 /* Build configuration list for PBXProject "Graphos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FEA129E2FBB3C95009903F4 /* Debug */,
@@ -542,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FEA12A02FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos_UI" */ = {
+		8FEA12A02FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FEA12A12FBB3C95009903F4 /* Debug */,
@@ -551,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FEA12A32FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos_UITests" */ = {
+		8FEA12A32FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "GraphosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FEA12A42FBB3C95009903F4 /* Debug */,
@@ -560,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FEA12A62FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "Graphos_UIUITests" */ = {
+		8FEA12A62FBB3C95009903F4 /* Build configuration list for PBXNativeTarget "GraphosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8FEA12A72FBB3C95009903F4 /* Debug */,

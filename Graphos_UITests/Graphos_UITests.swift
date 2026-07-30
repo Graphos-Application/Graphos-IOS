@@ -6,7 +6,7 @@
 //
 
 import Testing
-@testable import Graphos_UI
+@testable import Graphos
 
 struct Graphos_UITests {
 

@@ -10,9 +10,7 @@ import Foundation
 
 @MainActor
 struct AppStorageManager{
-    private var modelContext: ModelContext{
-        return ModelContext(MainView.modelContainer)
-    }
+    private let modelContext: ModelContext = ModelContext(MainView.modelContainer)
     
     func loadAllLabels() async -> [Label]{
         let fetchDescriptor = FetchDescriptor<Label>()
@@ -37,10 +35,11 @@ struct AppStorageManager{
     }
     
     func updateLabels(id: String, labels: [String]) async{
-        var existLabel: Label = await findByPhotoId(id: id)
-        
+        let existLabel: Label = await findByPhotoId(id: id)
+
         existLabel.labels = labels
-        
+        modelContext.insert(existLabel)
+
         try? modelContext.save()
     }
     
@@ -60,5 +59,7 @@ struct AppStorageManager{
         for label in orphanedLabels{
             modelContext.delete(label)
         }
+
+        try? modelContext.save()
     }
 }

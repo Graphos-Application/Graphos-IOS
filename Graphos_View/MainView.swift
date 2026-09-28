@@ -13,7 +13,7 @@ struct MainView: View {
     
     static let modelContainer: ModelContainer = {
         do {
-            return try ModelContainer(for: Label.self)
+            return try ModelContainer(for: Label.self, SearchLog.self)
         } catch {
             fatalError("데이터베이스를 열 수 없습니다: \(error)")
         }

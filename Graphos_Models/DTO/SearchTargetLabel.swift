@@ -11,9 +11,9 @@ import FoundationModels
 
 @Generable
 struct SearchTargetLabel {
-    @Guide(description: "이미지 검색 시 포함해야 하는 명사 단어 라벨 목록 (예: 고양이, 노을)")
+    @Guide(description: "이미지 검색 시 포함해야 하는 라벨 목록. 항상 영어 소문자 단수 명사로 작성 (예: cat, sunset)")
     var includedLabels: [String]
-    
-    @Guide(description: "이미지 검색 시 제외해야 하는 명사 단어 라벨 목록 (예: 개, 사람)")
+
+    @Guide(description: "이미지 검색 시 제외해야 하는 라벨 목록. 항상 영어 소문자 단수 명사로 작성 (예: dog, person)")
     var excludedLabels: [String]
 }
